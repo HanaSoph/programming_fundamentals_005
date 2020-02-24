@@ -90,7 +90,7 @@ describe("Object.clone", () => {
   });
 });
 
-describe.only("Object.get", () => {
+describe("Object.get", () => {
   test("returns the value for the given key", () => {
     expect(
       Object.get(
@@ -137,13 +137,13 @@ describe.only("Object.get", () => {
 });
 
 describe("Object.has", () => {
-  test("returns true if the object has the give key", () => {
+  test("returns true if the object has the given key", () => {
     const obj1 = { name: "Sally", location: "Leeds" };
     expect(Object.has(obj1, "name")).toBe(true);
     expect(Object.has(obj1, "location")).toBe(true);
   });
 
-  test("returns false if the object does not have the give key", () => {
+  test("returns false if the object does not have the given key", () => {
     const obj1 = { name: "Sally", location: "Leeds" };
     expect(Object.has(obj1, "postcode")).toBe(false);
     expect(Object.has(obj1, "address")).toBe(false);
